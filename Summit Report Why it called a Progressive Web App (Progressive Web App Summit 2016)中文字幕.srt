@@ -1,0 +1,444 @@
+1
+00:00:00,000 --> 00:00:02,685
+For video [https://www.youtube.com/watch?v=yxy1BOC1-q8]
+[MUSIC PLAYING]
+
+2
+00:00:02,685 --> 00:00:03,810
+- ROB DODSON: 嗨  大家好
+ROB DODSON: Hey, everybody.
+
+3
+00:00:03,810 --> 00:00:03,910
+怎么回事呢
+What's up?
+
+4
+00:00:03,910 --> 00:00:04,780
+我是 Rob Dodson
+It's Rob Dodson.
+
+5
+00:00:04,780 --> 00:00:07,260
+我们再一次来到 Progressive Web apps 峰会
+We are here again at the Progressive Web Apps Summit.
+
+6
+00:00:07,260 --> 00:00:09,072
+我们现在在演讲者等候室
+We are in the speaker ready room.
+
+7
+00:00:09,072 --> 00:00:11,530
+这里是演讲者交换的地方
+This is where folks are hanging out in between their talks.
+
+8
+00:00:11,530 --> 00:00:13,905
+我刚刚和 Alex Russell 在聊天
+I'm joined right now with Alex Russell, who is a software
+
+9
+00:00:13,905 --> 00:00:15,090
+他是 Chrome 团队的软件工程师
+engineer on the Chrome team.
+
+10
+00:00:15,090 --> 00:00:18,630
+Alex 可以说是 progressive web apps 的鼻祖了
+Alex is sort of like the progenitor of progressive web apps.
+
+11
+00:00:18,630 --> 00:00:19,790
+我这么说对吗
+Did I use that word correctly?
+
+12
+00:00:19,790 --> 00:00:20,080
+- ALEX RUSSELL: 是的
+ALEX RUSSELL: Yeah.
+
+13
+00:00:20,080 --> 00:00:20,705
+- ROB DODSON: 好 
+ROB DODSON: OK.
+
+14
+00:00:20,705 --> 00:00:21,680
+感觉不错
+That felt good.
+
+15
+00:00:21,680 --> 00:00:24,234
+作为 progressive web apps 的
+Sort of like a creator of some of the concepts
+
+16
+00:00:24,234 --> 00:00:25,400
+一些相关概念的创造者
+around progressive web apps.
+
+17
+00:00:25,400 --> 00:00:26,816
+我比较好奇  Alex 
+And I'm curious, Alex, for someone
+
+18
+00:00:26,816 --> 00:00:29,325
+对于一些不熟悉 progressive web apps 的人来说
+who is new to the topic of progressive web apps,
+
+19
+00:00:29,325 --> 00:00:30,950
+你是否可以和我们简单介绍下
+can you tell us a little bit about what
+
+20
+00:00:30,950 --> 00:00:33,120
+这些概念意味着什么？
+it means for something to be one of these things?
+
+21
+00:00:33,120 --> 00:00:36,149
+这是一个混合应用吗  还是其他什么
+Is this like a hybrid app, or what is this exactly?
+
+22
+00:00:36,149 --> 00:00:36,940
+- ALEX RUSSELL: 好的
+ALEX RUSSELL: Yeah.
+
+23
+00:00:36,940 --> 00:00:39,300
+这和混合应用不一样
+So unlike hybrid apps, which you kind of package up and put
+
+24
+00:00:39,300 --> 00:00:41,300
+混合应用可能需要你打包  整合  发布到商店
+in a bundle and then distribute through a store,
+
+25
+00:00:41,300 --> 00:00:43,150
+而 progressive web apps 仅仅是网站
+progressive web apps are just websites.
+
+26
+00:00:43,150 --> 00:00:45,620
+如果你使用它们的次数足够多
+Except if you use them enough and if they
+
+27
+00:00:45,620 --> 00:00:48,550
+以及它们满足特定的质量标准
+meet specific quality criteria so that the browser knows
+
+28
+00:00:48,550 --> 00:00:51,170
+那么浏览器会觉得它运行良好 然后说下线
+that it would work well, say offline, or had
+
+29
+00:00:51,170 --> 00:00:54,720
+或者已经获得良好的主页数据  
+good metadata for your home screen, once it meets that bar,
+
+30
+00:00:54,720 --> 00:00:57,010
+一旦满足条件  浏览器开始把它看做一个应用
+the browser can start to treat that more like an app,
+
+31
+00:00:57,010 --> 00:01:00,067
+同时  你可以开始选择拥有它 
+and you can start to opt in to having it or keeping it
+
+32
+00:01:00,067 --> 00:01:03,450
+或者把它保存在主页  把它放到应用列表诸如此类。
+to your home screen, putting it in your apps list, that sort of thing.
+
+33
+00:01:03,450 --> 00:01:06,240
+那么  如果我是一个商家
+ROB DODSON: And so if I'm a business
+
+34
+00:01:06,240 --> 00:01:10,562
+我正在了解这个  对我来说有什么吸引人的使用场景呢
+and I'm checking this out, what is the motivating use case
+
+35
+00:01:10,562 --> 00:01:12,020
+好吧  比如说
+for me to be like, all right, cool,
+
+36
+00:01:12,020 --> 00:01:15,047
+如何把我们当前的东西转换为这个模式呢
+let's take our current thing and switch over to this model?
+
+37
+00:01:15,047 --> 00:01:18,500
+这种模式有一堆的底层技术
+ALEX RUSSELL: So the model has a bunch of underlying tech below it.
+
+38
+00:01:18,500 --> 00:01:19,659
+你需要得到 TLS ( Transport Layer Security )
+So you need to get TLS.
+
+39
+00:01:19,659 --> 00:01:20,950
+你要有一个安全的网站
+You have to have a secure site.
+
+40
+00:01:20,950 --> 00:01:23,730
+Service workers 会提供离线
+Service workers are what enable offline and reliable
+
+41
+00:01:23,730 --> 00:01:25,430
+可靠的性能  消息推送
+performance, and push notifications,
+
+42
+00:01:25,430 --> 00:01:28,392
+以及许多其他优秀的现代 web 东西
+and a bunch of other really good modern web stuff.
+
+43
+00:01:28,392 --> 00:01:30,850
+一旦你拥有了这些  并把它们整合起来
+And once you have all of that, and you put it all together,
+
+44
+00:01:30,850 --> 00:01:32,730
+仅仅通过一条连接
+you can deliver an experience to users
+
+45
+00:01:32,730 --> 00:01:35,794
+用户就可以得到和原生的应用相媲美的体验
+just through a link that can rival native apps.
+
+46
+00:01:35,794 --> 00:01:37,710
+最后  他们可以存在于主页
+And eventually, they can be on the home screen
+
+47
+00:01:37,710 --> 00:01:39,980
+并重新参与  就像是一个原生的应用。
+and be reengaging just like native apps.
+
+48
+00:01:39,980 --> 00:01:41,455
+这个真的有效
+And it's really working.
+
+49
+00:01:41,455 --> 00:01:43,580
+正在着手构建 progressive web apps 的人们
+The folks who are starting to build progressive web
+
+50
+00:01:43,580 --> 00:01:45,880
+甚至没有支持 progressive web apps 的浏览器厂商
+apps, even for browsers that don't support them,
+
+51
+00:01:45,880 --> 00:01:46,880
+他们都看到重大的前景
+are seeing major gains.
+
+52
+00:01:46,880 --> 00:01:49,860
+像 Ali Express  一支相当强大的团队
+Like Ali Express, really strong team.
+
+53
+00:01:49,860 --> 00:01:51,360
+他们似乎停止其他运作
+They just sort of stopped the world,
+
+54
+00:01:51,360 --> 00:01:53,610
+把网站转为了 progressive web apps
+and they turned their site into a progressive web app.
+
+55
+00:01:53,610 --> 00:01:57,290
+他们甚至在 iOS 中也看到很大的提升
+And they saw a huge lift in engagement, even on iOS.
+
+56
+00:01:57,290 --> 00:02:00,700
+移动互联网体验领域的投资
+So really investing in the mobile web experience
+
+57
+00:02:00,700 --> 00:02:02,930
+仍然在探索中
+is what this is about.
+
+58
+00:02:02,930 --> 00:02:05,480
+但是  我们能让你
+But we give you the ability to actually get
+
+59
+00:02:05,480 --> 00:02:07,910
+真的获得 Android 上的类应用体验
+to app-like experiences on Android.
+
+60
+00:02:07,910 --> 00:02:10,676
+- ROB DODSON: 好吧  我被说服了
+ROB DODSON: And so, OK, I'm sold.
+
+61
+00:02:10,676 --> 00:02:11,800
+我开始想做这件事
+I want to start doing this.
+
+62
+00:02:11,800 --> 00:02:13,790
+有哪些工具
+What are some tools that I can use
+
+63
+00:02:13,790 --> 00:02:16,800
+我可以用来转换到这个模式吗
+to start to transition over to this model?
+
+64
+00:02:16,800 --> 00:02:18,810
+这是很大的技术进步
+ALEX RUSSELL: It's a big tech step.
+
+65
+00:02:18,810 --> 00:02:21,930
+但是  可以确认的是  对现在的人们来说  
+But the hardest part so far for folks
+
+66
+00:02:21,930 --> 00:02:24,610
+最难的部分是你要满足参与的门槛
+has been verifying that you meet that engagement bar,
+
+67
+00:02:24,610 --> 00:02:26,515
+门槛是指你的应用质量
+that quality bar for your app.
+
+68
+00:02:26,515 --> 00:02:28,640
+现在有一些工具能起到帮助
+And there's a couple of tools that are helping now.
+
+69
+00:02:28,640 --> 00:02:30,570
+你可以在 Chrome Canary 测试版下
+If you check out the new Applications
+
+70
+00:02:30,570 --> 00:02:33,200
+开发者工具里的新应用面板
+Panel in Dev Tools in Canary in beta in Chrome,
+
+71
+00:02:33,200 --> 00:02:35,900
+找到一堆的支持帮助
+you'll see that there's a bunch of support
+
+72
+00:02:35,900 --> 00:02:38,266
+在调试应用时
+for getting all the information you need about your app
+
+73
+00:02:38,266 --> 00:02:39,640
+你便能得到所需要的全部信息
+when you're doing live debugging.
+
+74
+00:02:39,640 --> 00:02:41,130
+同时  在 Google 的 github 下面
+And also there's a project called
+
+75
+00:02:41,130 --> 00:02:45,014
+有个名为 Lighthouse 的项目
+Lighthouse, which is in the Google Chrome organization on GitHub.
+
+76
+00:02:45,014 --> 00:02:46,680
+这个项目很棒
+And this is awesome because it gives you
+
+77
+00:02:46,680 --> 00:02:49,444
+它提供拓展和命令行的工具
+an extension and a command line tool that you can verify
+
+78
+00:02:49,444 --> 00:02:52,360
+它可以用来验证你是否满足所有的标准条件
+that you've met all those criteria with, which is pretty awesome.
+
+79
+00:02:52,360 --> 00:02:53,370
+这帮我省下了大量的时间
+Saved me tons of time.
+
+80
+00:02:53,370 --> 00:02:54,694
+推荐一下
+Recommended.
+
+81
+00:02:54,694 --> 00:02:55,650
+- ROB DODSON: 好了
+ROB DODSON: Right on.
+
+82
+00:02:55,650 --> 00:02:58,250
+我们会在节目笔记中
+So we will include links to all the tools
+
+83
+00:02:58,250 --> 00:03:00,220
+包含 Alex 推荐的所有工具的链接
+that Alex mentioned down in the show notes.
+
+84
+00:03:00,220 --> 00:03:02,530
+在 YouTube 的 Chrome 开发者频道
+We've also got links to Alex's talk
+
+85
+00:03:02,530 --> 00:03:05,500
+我们也会提供  Alex 演讲的链接
+on the Chrome Developers YouTube channel down there as well.
+
+86
+00:03:05,500 --> 00:03:10,000
+Alex  在晴朗的 Amsterdam 非常感谢你和我们在一起
+Alex, thank you so much for being with us today in sunny Amsterdam.
+
+87
+00:03:10,000 --> 00:03:12,190
+我是来自 PWA (Progressive Web App) 峰会的 Rob Dodson
+I'm Rob Dodson from the PWA Summit.
+
+88
+00:03:12,190 --> 00:03:13,280
+我们下次见
+I'll see you around.
+
+89
+00:03:13,280 --> 00:03:16,630
+[MUSIC PLAYING]
+
